@@ -25,23 +25,25 @@ export default function Header() {
               </Link>
             </div>
             <nav className="hidden md:ml-8 md:flex md:space-x-8">
-              <Link href="/destinations">
-                <a className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+              <Link 
+                href="/destinations"
+                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                   isActive("/destinations") 
                     ? "text-danube-600 bg-danube-50" 
                     : "text-slate-700 hover:text-danube-600"
-                }`}>
-                  Destinations
-                </a>
+                }`}
+              >
+                Destinations
               </Link>
-              <Link href="/experiences">
-                <a className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+              <Link 
+                href="/experiences"
+                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                   isActive("/experiences") 
                     ? "text-danube-600 bg-danube-50" 
                     : "text-slate-700 hover:text-danube-600"
-                }`}>
-                  Experiences
-                </a>
+                }`}
+              >
+                Experiences
               </Link>
               <a href="#hotels" className="text-slate-700 hover:text-danube-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">
                 Hotels
@@ -75,15 +77,17 @@ export default function Header() {
         {mobileMenuOpen && (
           <div className="md:hidden border-t border-slate-200 py-4">
             <nav className="flex flex-col space-y-2">
-              <Link href="/destinations">
-                <a className="text-slate-700 hover:text-danube-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">
-                  Destinations
-                </a>
+              <Link 
+                href="/destinations"
+                className="text-slate-700 hover:text-danube-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              >
+                Destinations
               </Link>
-              <Link href="/experiences">
-                <a className="text-slate-700 hover:text-danube-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">
-                  Experiences
-                </a>
+              <Link 
+                href="/experiences"
+                className="text-slate-700 hover:text-danube-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+              >
+                Experiences
               </Link>
               <a href="#hotels" className="text-slate-700 hover:text-danube-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">
                 Hotels
